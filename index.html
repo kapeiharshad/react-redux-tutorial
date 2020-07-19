@@ -23,13 +23,26 @@
         name: "Harshad",
         age: "23"
       };
+      handleChange = (e) => {
+        this.setState({
+          name: e.target.value
+        });
+      };
+      handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("from submit:", this.state.name);
+      };
       render() {
         return [
           <div className="app-content">
-            <h1>Hii from react!!!</h1>
+            <h1>Hii {this.state.name}!!!</h1>
             <p>
               My name is:{this.state.name}and I am {this.state.age}
             </p>
+            <form onSubmit={this.handleSubmit}>
+              <input type="text" onChange={this.handleChange} />
+              <button>Submit</button>
+            </form>
           </div>
         ];
       }
