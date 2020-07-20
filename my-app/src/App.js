@@ -1,5 +1,6 @@
 import React from "react";
 import Ninja from "./Ninja";
+import AddNinja from "./AddNinja";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1>Welcome to react</h1>
       </header>
       <Ninja />
+      <AddNinja />
     </div>
   );
 }
