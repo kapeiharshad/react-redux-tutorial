@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 
 class Ninja extends Component {
-  state = {
-    name: "Shin"
-  };
   render() {
-    return (
-      <div className="ninja">
-        <div>Name: {this.state.name}</div>
-        <div>Age: 23</div>
-      </div>
-    );
+    const ninjalist = this.props.ninjas.map((ninja) => {
+      const { name, age, belt } = ninja;
+      return (
+        <div className="ninja" key={ninja.id}>
+          <div>Name:{name} </div>
+          <div>Age: {age}</div>
+          <div>Belt: {belt}</div>
+          <br />
+        </div>
+      );
+    });
+    return <div className="ninja-list">{ninjalist}</div>;
   }
 }
 
