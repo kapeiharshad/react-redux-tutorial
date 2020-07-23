@@ -9,6 +9,13 @@ class Ninja extends Component {
           <div>Name:{name} </div>
           <div>Age: {age}</div>
           <div>Belt: {belt}</div>
+          <button
+            onClick={() => {
+              this.props.deleteNinja(ninja.id);
+            }}
+          >
+            Delete
+          </button>
           <br />
         </div>
       );
