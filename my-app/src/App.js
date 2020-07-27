@@ -7,7 +7,7 @@ class App extends React.Component {
     ninjas: [
       { name: "Shosho", age: 10, belt: "white", id: 1 },
       { name: "Shin", age: 20, belt: "yellow", id: 2 },
-      { name: "yosho", age: 30, belt: "black", id: 3 }
+      { name: "Yosho", age: 30, belt: "black", id: 3 }
     ]
   };
   addNinja = (ninja) => {
