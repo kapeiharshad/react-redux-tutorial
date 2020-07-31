@@ -17,7 +17,7 @@ class Post extends Component {
   }
   render() {
     const post = this.state.post ? (
-      <div className="post card">
+      <div className="post">
         <h4 className="center">{this.state.post.title}</h4>
         <p>{this.state.post.body}</p>
       </div>
