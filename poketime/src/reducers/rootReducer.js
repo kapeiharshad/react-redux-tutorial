@@ -3,8 +3,7 @@ const initState = {
     {
       userId: 1,
       id: 1,
-      title:
-        "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      title: "sunt aut facere repellat ",
       body: "quia et suscipit\nsuscipit recusandae consequuntur expedita"
     },
     {
@@ -16,7 +15,7 @@ const initState = {
     {
       userId: 1,
       id: 3,
-      title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      title: "ea molestias quasi exercitationem",
       body: "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi"
     }
   ]

@@ -25,7 +25,6 @@ class Post extends Component {
     ) : (
       <div className="center">Loading post...</div>
     );
-    console.log(" this.props.post::", this.props);
     return (
       <div className="container">
         <h4>{post}</h4>
@@ -38,10 +37,9 @@ const mapStateToProps = (state, ownProps) => {
   let id = ownProps.match.params.post_id;
   return {
     post: state.posts.find((post) => {
-      return post.id === id;
+      console.log(post.id, parseInt(id));
+      return post.id === parseInt(id);
     })
   };
 };
-console.log("mapStateToProps::", mapStateToProps);
-
 export default connect(mapStateToProps)(Post);
